@@ -1,14 +1,17 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import {AiFillWarning, AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+import {FaClipboard,FaUserCircle} from 'react-icons/fa'
+
+//  import {BsFillClipboardFill} from 'react-icons/fa';
+import {BsFillClipboardFill, BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import { HiOutlineRefresh } from 'react-icons/hi';
+import { HiOutlineRefresh ,HiOutlineClipboardCopy} from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
+import { GiLouvrePyramid,GiHamburgerMenu } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -471,91 +474,51 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    // title: 'Dashboard',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'Seller Dashboard',
+        icon: <FaClipboard />,
+      },
+    ],
+  },
+  {
+    // title: 'Dashboard',
+    links: [
+      {
+        name: 'Create your NFT',
+        icon: <AiFillWarning />,
+      },
+    ],
+  },
+  {
+    // title: 'Dashboard',
+    links: [
+      {
+        name: 'Your Orders',
+        icon: <HiOutlineClipboardCopy />,
+      },
+    ],
+  },
+  {
+    // title: 'Dashboard',
+    links: [
+      {
+        name: 'Claims',
+        icon: <GiHamburgerMenu />,
+      },
+    ],
+  },
+  {
+    // title: 'Dashboard',
+    links: [
+      {
+        name: 'My Profile',
+        icon: <FaUserCircle />,
       },
     ],
   },
 
-  {
-    title: 'Pages',
-    links: [
-      {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
-      },
-      {
-        name: 'employees',
-        icon: <IoMdContacts />,
-      },
-      {
-        name: 'customers',
-        icon: <RiContactsLine />,
-      },
-    ],
-  },
-  {
-    title: 'Apps',
-    links: [
-      {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
-      },
-      {
-        name: 'kanban',
-        icon: <BsKanban />,
-      },
-      {
-        name: 'editor',
-        icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
-      },
-    ],
-  },
 ];
 
 export const cartData = [
@@ -616,39 +579,39 @@ export const chatData = [
 export const earningData = [
   {
     icon: <MdOutlineSupervisorAccount />,
-    amount: '39,354',
-    percentage: '-4%',
-    title: 'Customers',
+    amount: '63.7%',
+    percentage: '+0.1%',
+    title: 'Auth  Score',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
     pcColor: 'red-600',
   },
   {
-    icon: <BsBoxSeam />,
-    amount: '4,396',
-    percentage: '+23%',
-    title: 'Products',
-    iconColor: 'rgb(255, 244, 229)',
-    iconBg: 'rgb(254, 201, 15)',
+    // icon: <BsBoxSeam />,
+    amount: '17.8%',
+    percentage: '+8.8%',
+    title: '30-day Readmissions',
+    // iconColor: 'rgb(255, 244, 229)',
+    // iconBg: 'rgb(254, 201, 15)',
     pcColor: 'green-600',
   },
   {
     icon: <FiBarChart />,
-    amount: '423,39',
-    percentage: '+38%',
-    title: 'Sales',
+    amount: '42',
+    percentage: '-1.5%',
+    title: 'Minted NFTS per 1000',
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
 
     pcColor: 'green-600',
   },
   {
-    icon: <HiOutlineRefresh />,
-    amount: '39,354',
-    percentage: '-12%',
-    title: 'Refunds',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
+    // icon: <HiOutlineRefresh />,
+    amount: '$331',
+    percentage: '-5.4%',
+    title: 'Risk adjusted',
+    // iconColor: 'rgb(0, 194, 146)',
+    // iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
   },
 ];
@@ -872,33 +835,33 @@ export const userProfileData = [
 
 export const ordersGrid = [
   {
-    headerText: 'Image',
+    headerText: 'Status img',
     template: gridOrderImage,
     textAlign: 'Center',
     width: '120',
   },
   {
     field: 'OrderItems',
-    headerText: 'Item',
+    headerText: 'Requested by',
     width: '150',
     editType: 'dropdownedit',
     textAlign: 'Center',
   },
   { field: 'CustomerName',
-    headerText: 'Customer Name',
+    headerText: 'Services',
     width: '150',
     textAlign: 'Center',
   },
   {
     field: 'TotalAmount',
-    headerText: 'Total Amount',
+    headerText: 'Date',
     format: 'C2',
     textAlign: 'Center',
     editType: 'numericedit',
     width: '150',
   },
   {
-    headerText: 'Status',
+    headerText: 'Approval',
     template: gridOrderStatus,
     field: 'OrderItems',
     textAlign: 'Center',
@@ -906,14 +869,14 @@ export const ordersGrid = [
   },
   {
     field: 'OrderID',
-    headerText: 'Order ID',
+    headerText: 'Req ID',
     width: '120',
     textAlign: 'Center',
   },
 
   {
     field: 'Location',
-    headerText: 'Location',
+    headerText: 'Urgency',
     width: '150',
     textAlign: 'Center',
   },
@@ -2123,11 +2086,163 @@ export const employeesData = [
 
 export const ordersData = [
   {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product7
+  },
+  {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product6,
+  },
+  {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product7,
+  },
+  {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product8,
+  },
+  {
+    OrderID: 748975,
+    CustomerName: 'Miron Vitold',
+    TotalAmount: 23.99,
+    OrderItems: 'Healthcare Erbology',
+    Location: 'NAN',
+    Status: 'rejected',
+    StatusBg: 'red',
+    ProductImage:
+    product8,
+  },
+  {
+    OrderID: 94757,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product8,
+  },
+  {
+    OrderID: 94757,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product7,
+  },
+  {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+      product6,
+  },
+  {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+     product7
+  },
+  {
+    OrderID: 2000124,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Marvin Ledger',
+    Location: 'Low',
+    Status: 'Cancelled',
+    StatusBg: 'red',
+    ProductImage:
+    product8
+  },
+  {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+product7  },
+  {
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
+    ProductImage:
+product6  },
+  {
+    OrderID: 874534,
+    CustomerName: 'Danai',
+    TotalAmount: 122.99,
+    OrderItems: 'Watch',
+    Location: 'USA',
+    Status: 'canceled',
+    StatusBg: '#FF5C8E',
+    ProductImage:
+      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
+  },
+  {
     OrderID: 10248,
     CustomerName: 'Vinet',
 
     TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
+    OrderItems: '',
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
@@ -2146,13 +2261,14 @@ export const ordersData = [
       product5,
   },
   {
-    OrderID: 390457,
-    CustomerName: 'Fran Perez',
-    TotalAmount: 93.31,
-    OrderItems: 'Candy Gucci',
-    Location: 'New York',
-    Status: 'active',
-    StatusBg: '#03C9D7',
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
     ProductImage:
       product7,
   },
@@ -2176,7 +2292,7 @@ export const ordersData = [
     Status: 'rejected',
     StatusBg: 'red',
     ProductImage:
-    product1,
+      product1,
   },
   {
     OrderID: 94757,
@@ -2201,13 +2317,14 @@ export const ordersData = [
       product3,
   },
   {
-    OrderID: 845954,
-    CustomerName: 'Penjani',
-    TotalAmount: 59.99,
-    OrderItems: 'Headphone',
-    Location: 'USA',
-    Status: 'complete',
-    StatusBg: '#8BE78B',
+    OrderID: 200004,
+    CustomerName: 'CPT-92227 x 2 Visits Anually',
+
+    TotalAmount: 32.38,
+    OrderItems: 'Dr Roger Lenon',
+    Location: 'Medium',
+    Status: 'Approve',
+    StatusBg: '#FB9678',
     ProductImage:
       product4,
   },
@@ -2242,8 +2359,8 @@ export const ordersData = [
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
-  },
+product7,  
+},
   {
     OrderID: 24546,
     CustomerName: 'Frank',
@@ -2253,8 +2370,8 @@ export const ordersData = [
     Status: 'complete',
     StatusBg: '#8BE78B',
     ProductImage:
-      'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
-  },
+product6,  
+},
   {
     OrderID: 874534,
     CustomerName: 'Danai',
@@ -2530,8 +2647,7 @@ export const ordersData = [
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
-  },
+  product7,  },
   {
     OrderID: 24546,
     CustomerName: 'Frank',
@@ -2674,152 +2790,7 @@ export const ordersData = [
     Status: 'active',
     StatusBg: '#03C9D7',
     ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
-  },
-  {
-    OrderID: 24546,
-    CustomerName: 'Frank',
-    TotalAmount: 84.99,
-    OrderItems: 'Pan Cake',
-    Location: 'Delhi',
-    Status: 'complete',
-    StatusBg: '#8BE78B',
-    ProductImage:
-      'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
-  },
-  {
-    OrderID: 874534,
-    CustomerName: 'Danai',
-    TotalAmount: 122.99,
-    OrderItems: 'Watch',
-    Location: 'USA',
-    Status: 'canceled',
-    StatusBg: '#FF5C8E',
-    ProductImage:
-      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
-  },
-  {
-    OrderID: 10248,
-    CustomerName: 'Vinet',
-
-    TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
-    Location: 'USA',
-    Status: 'pending',
-    StatusBg: '#FB9678',
-    ProductImage:
-      product6,
-  },
-  {
-    OrderID: 345653,
-    CustomerName: 'Carson Darrin',
-    TotalAmount: 56.34,
-    OrderItems: 'Butter Scotch',
-    Location: 'Delhi',
-    Status: 'complete',
-    StatusBg: '#8BE78B',
-    ProductImage:
-      product5,
-  },
-  {
-    OrderID: 390457,
-    CustomerName: 'Fran Perez',
-    TotalAmount: 93.31,
-    OrderItems: 'Candy Gucci',
-    Location: 'New York',
-    Status: 'active',
-    StatusBg: '#03C9D7',
-    ProductImage:
-      product7,
-  },
-  {
-    OrderID: 893486,
-    CustomerName: 'Anika Viseer',
-    TotalAmount: 93.31,
-    OrderItems: 'Night Lamp',
-    Location: 'Germany',
-    Status: 'canceled',
-    StatusBg: '#FF5C8E',
-    ProductImage:
-      product4,
-  },
-  {
-    OrderID: 748975,
-    CustomerName: 'Miron Vitold',
-    TotalAmount: 23.99,
-    OrderItems: 'Healthcare Erbology',
-    Location: 'Spain',
-    Status: 'rejected',
-    StatusBg: 'red',
-    ProductImage:
-      product1,
-  },
-  {
-    OrderID: 94757,
-    CustomerName: 'Omar Darobe',
-    TotalAmount: 95.99,
-    OrderItems: 'Makeup Lancome Rouge',
-    Location: 'USA',
-    Status: 'canceled',
-    StatusBg: '#FF5C8E',
-    ProductImage:
-      product2,
-  },
-  {
-    OrderID: 944895,
-    CustomerName: 'Lulia albu',
-    TotalAmount: 17.99,
-    OrderItems: 'Skincare',
-    Location: 'USA',
-    Status: 'active',
-    StatusBg: '#03C9D7',
-    ProductImage:
-      product3,
-  },
-  {
-    OrderID: 845954,
-    CustomerName: 'Penjani',
-    TotalAmount: 59.99,
-    OrderItems: 'Headphone',
-    Location: 'USA',
-    Status: 'complete',
-    StatusBg: '#8BE78B',
-    ProductImage:
-      product4,
-  },
-  {
-    OrderID: 845954,
-    CustomerName: 'Jie Yan',
-    TotalAmount: 87.99,
-    OrderItems: 'Shoes',
-    Location: 'USA',
-    Status: 'pending',
-    StatusBg: '#FB9678',
-    ProductImage:
-      'https://cdn.shopclues.com/images1/thumbnails/104158/320/320/148648730-104158193-1592481791.jpg',
-  },
-  {
-    OrderID: 874534,
-    CustomerName: 'Danai',
-    TotalAmount: 122.99,
-    OrderItems: 'Watch',
-    Location: 'USA',
-    Status: 'canceled',
-    StatusBg: '#FF5C8E',
-    ProductImage:
-      'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
-  },
-  {
-    OrderID: 38489,
-    CustomerName: 'Miron',
-    TotalAmount: 87.99,
-    OrderItems: 'Ice Cream',
-    Location: 'USA',
-    Status: 'active',
-    StatusBg: '#03C9D7',
-    ProductImage:
-      'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dairy-free-ice-cream-eae372d.jpg',
-  },
+product7  },
   {
     OrderID: 24546,
     CustomerName: 'Frank',

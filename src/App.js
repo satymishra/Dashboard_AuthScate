@@ -9,7 +9,7 @@ import './App.css';
 
 import { useStateContext } from './contexts/ContextProvider';
 
-const App = () => {
+const App = ()  => {
   const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const App = () => {
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
-          <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
+          <div className="fixed right-4 bottom-4 " style={{ zIndex: '1000' }}>
             <TooltipComponent
               content="Settings"
               position="Top"
@@ -33,7 +33,7 @@ const App = () => {
               <button
                 type="button"
                 onClick={() => setThemeSettings(true)}
-                style={{ background: currentColor, borderRadius: '50%' }}
+                style={{ background: 'blue', borderRadius: '50%' }}
                 className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
               >
                 <FiSettings />
@@ -55,21 +55,21 @@ const App = () => {
               activeMenu
                 ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full  '
                 : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
-            }
+            } 
           >
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
               <Navbar />
-            </div>
+           
             <div>
               {themeSettings && (<ThemeSettings />)}
 
               <Routes>
                 {/* dashboard  */}
                 <Route path="/" element={(<Ecommerce />)} />
-                <Route path="/ecommerce" element={(<Ecommerce />)} />
+                <Route path="/Seller Dashboard" element={(<Ecommerce />)} />
 
                 {/* pages  */}
-                <Route path="/orders" element={<Orders />} />
+                <Route path="/Your Orders" element={<Orders />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/customers" element={<Customers />} />
 
@@ -93,6 +93,7 @@ const App = () => {
             </div>
             <Footer />
           </div>
+        </div>
         </div>
       </BrowserRouter>
     </div>

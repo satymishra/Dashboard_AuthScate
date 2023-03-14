@@ -18,15 +18,22 @@ const DropDown = ({ currentMode }) => (
 const Ecommerce = () => {
   const { currentColor, currentMode } = useStateContext();
 
-  return (
-    <div className="mt-24">
+  return ( 
+    <div className="w-screen mt-12 bg-slate-300">
+      
+
+
+      {/* <div className="grid grid-cols-1 ">
+      
+      </div> */}
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
-              <p className="font-bold text-gray-400">Earnings</p>
-              <p className="text-2xl">$63,448.78</p>
+              <p className="font-bold text-gray-400">Total NFTs</p>
+              <p className="text-2xl">45</p>
             </div>
+            
             <button
               type="button"
               style={{ backgroundColor: currentColor }}
@@ -39,7 +46,7 @@ const Ecommerce = () => {
             <Button
               color="white"
               bgColor={currentColor}
-              text="Download"
+              text="Download  Summary"
               borderRadius="10px"
             />
           </div>
@@ -69,19 +76,19 @@ const Ecommerce = () => {
       <div className="flex gap-10 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
           <div className="flex justify-between">
-            <p className="font-semibold text-xl">Revenue Updates</p>
+            <p className="font-semibold text-xl">Product Sales</p>
             <div className="flex items-center gap-4">
               <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
                 <span>
                   <GoPrimitiveDot />
                 </span>
-                <span>Expense</span>
+                <span>Active</span>
               </p>
               <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
                 <span>
                   <GoPrimitiveDot />
                 </span>
-                <span>Budget</span>
+                <span>Decayed</span>
               </p>
             </div>
           </div>
@@ -89,17 +96,17 @@ const Ecommerce = () => {
             <div className=" border-r-1 border-color m-4 pr-10">
               <div>
                 <p>
-                  <span className="text-3xl font-semibold">$93,438</span>
+                  <span className="text-3xl font-semibold">$331</span>
                   <span className="p-1.5 hover:drop-shadow-xl cursor-pointer rounded-full text-white bg-green-400 ml-3 text-xs">
                     23%
                   </span>
                 </p>
-                <p className="text-gray-500 mt-1">Budget</p>
+                <p className="text-gray-500 mt-1">-5.4%</p>
               </div>
               <div className="mt-8">
-                <p className="text-3xl font-semibold">$48,487</p>
+              
 
-                <p className="text-gray-500 mt-1">Expense</p>
+                <p className="text-gray-500 mt-1">From September</p>
               </div>
 
               <div className="mt-5">
@@ -125,11 +132,11 @@ const Ecommerce = () => {
             style={{ backgroundColor: currentColor }}
           >
             <div className="flex justify-between items-center ">
-              <p className="font-semibold text-white text-2xl">Earnings</p>
+              <p className="font-semibold text-white text-2xl">Risk Gap</p>
 
               <div>
-                <p className="text-2xl text-white font-semibold mt-8">$63,448.78</p>
-                <p className="text-gray-200">Monthly revenue</p>
+                <p className="text-2xl text-white font-semibold mt-8">64.1%</p>
+                <p className="text-gray-200">+2.3% from September</p>
               </div>
             </div>
 
@@ -140,8 +147,9 @@ const Ecommerce = () => {
 
           <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl md:w-400 p-8 m-3 flex justify-center items-center gap-10">
             <div>
-              <p className="text-2xl font-semibold ">$43,246</p>
-              <p className="text-gray-400">Yearly sales</p>
+              <p className="text-2xl font-semibold ">Minted NFTs per 1000eth</p>
+              <p className="text-gray-400">495</p>
+              <p className="text-400">143 Decayed</p>
             </div>
 
             <div className="w-40">

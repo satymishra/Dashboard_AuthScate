@@ -25,7 +25,7 @@ const Sidebar = () => {
         <>
           <div className="flex justify-between items-center">
             <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
-              <SiShopware /> <span>Shoppy</span>
+            <img src="https://authscate.io/static/media/logo1.2731ca43a78d619a2201.png"/>
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
